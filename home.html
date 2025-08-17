@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MLK Jewelry</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/home.css">
+ 
+</head>
+<body>
+  <div class="app">
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">MLK</div>
+        <div class="brand-text">
+          <h1>MLK Jewelry</h1>
+          <p class="muted">Handcrafted · Art & Light</p>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-links">
+          <a>Collections</a>
+          <a>Custom Design</a>
+          <a>About Us</a>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+        <button class="cart"><i class="fas fa-shopping-cart"></i> (0)</button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">New — Summer 2025</p>
+        <h2>When craftsmanship meets poetry.</h2>
+        <p class="lead">Each piece tells a story. We craft with vision before hands — so you feel the artwork while wearing it.</p>
+        <div class="hero-cta">
+          <button class="btn-primary"><i class="fas fa-gem"></i> Discover</button>
+          <button class="btn-ghost"><i class="fas fa-envelope"></i> Contact</button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="img/سوار.jpg" alt="hero">
+        <div class="badge">
+          <strong>Handmade · Limited</strong><br>
+          <small>Piece #12 — Nile Collection</small>
+        </div>
+      </div>
+    </header>
+    <section class="categories">
+  <h2>Categories</h2>
+  <div class="category-grid">
+    
+    <div class="category-card" onclick="window.location='earrings.html'">
+      <img src="img/earrings.jpg" alt="Earrings">
+      <div class="overlay">Earrings</div>
+    </div>
+
+    <div class="category-card" onclick="window.location='chains.html'">
+      <img src="img/necklaces.jpg" alt="Necklaces">
+      <div class="overlay">chains</div>
+    </div>
+
+    <div class="category-card" onclick="window.location='rings.html'">
+      <img src="img/rings.jpg" alt="Rings">
+      <div class="overlay">Rings</div>
+    </div>
+
+    <div class="category-card" onclick="window.location='bracelets.html'">
+      <img src="img/bracelets.jpg" alt="Bracelets">
+      <div class="overlay">Bracelets</div>
+    </div>
+
+  </div>
+</section>
+<section class="featured">
+  <h2>Featured Products</h2>
+
+  <!-- السلايدر مع الأزرار -->
+  <div class="slider-container">
+    <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="slider" id="slider">
+      <div class="slide"><img src="img/5.jpg" alt="">
+      <h3>Silver Watch</h3>
+      <p>
+"Elegant silver watch with a timeless design, perfect for both casual and formal occasions."</p></div>
+      <div class="slide"><img src="img/6.jpg" alt="">
+      <h3>Diamond Ring</h3>
+      <p>
+"Luxury diamond ring with a brilliant cut stone, crafted to symbolize elegance and love."</p></div>
+      <div class="slide"><img src="img/7.jpg" alt="">
+      <h3>Silver Ring</h3>
+      <p>
+"Stylish silver ring with a sleek finish, suitable for everyday wear and special events."
+</p></div>
+      <div class="slide"><img src="img/8.jpg" alt="">
+      <h3>Gold Necklace</h3>
+      <p>
+"Classic gold necklace with a refined shine, a must-have accessory for any jewelry collection."
+</p></div>
+      <div class="slide"><img src="img/9.jpg" alt="">
+    <h3> Rose-Shaped Gold Necklace</h3>
+      <p>
+"Delicate gold necklace with a rose-shaped pendant, combining beauty and sophistication."
+</p></div>
+      <div class="slide"><img src="img/10.jpg" alt="">
+      <h3>Brown Watch</h3>
+      <p>
+"Chic brown watch with a modern design, blending style and practicality for daily use."</p></div>
+    </div>
+    <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
+  <!-- الدوائر -->
+  <div class="indicators">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</section>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+
+<section class="jewel-section">
+  <div class="content-grid">
+
+    <!-- Video Box -->
+    <div class="video-box fade-in">
+      <video id="jewelVideo" playsinline autoplay muted loop poster="assets/jewel-poster.jpg">
+        <source src="img/ved.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <button class="controls" id="soundToggle" type="button">
+        🔊
+      </button>
+    </div>
+
+    <!-- Text content -->
+    <div class="right fade-in">
+      <div class="eyebrow">MLK Atelier</div>
+      <h2 class="title">Handcrafted brilliance, designed to last.</h2>
+      <p class="lead">
+        Discover limited-edition pieces forged with precision and a touch of soul.
+        Responsibly sourced. Expertly finished. Effortlessly yours.
+      </p>
+      <div class="badges">
+        <span class="badge">18K Gold</span>
+        <span class="badge">Conflict-Free Stones</span>
+        <span class="badge">Lifetime Care</span>
+      </div>
+      <br />
+      <a class="cta" href="#shop">Shop the Collection →</a>
+    </div>
+
+  </div>
+</section>
+<section class="testimonials">
+  <h2 class="section-title">What Our Customers Say</h2>
+  <div class="testimonial-slider">
+
+    <!-- Slide -->
+    <div class="testimonial-card">
+      <img src="img/client1.jpg" alt="Client 1" class="client-pic" />
+      <h3 class="client-name">Sarah Johnson</h3>
+      <p class="client-role">New York, USA</p>
+      <div class="stars">★★★★★</div>
+      <p class="client-quote">"Absolutely stunning jewelry! The craftsmanship is top-notch and I always get compliments when I wear it."</p>
+    </div>
+
+    <!-- Slide -->
+    <div class="testimonial-card">
+      <img src="img/client2.jpg" alt="Client 2" class="client-pic" />
+      <h3 class="client-name">Omar Khaled</h3>
+      <p class="client-role">Riyadh, Saudi</p>
+      <div class="stars">★★★★★</div>
+      <p class="client-quote">"Fast delivery and the quality exceeded my expectations. I’ll definitely order again."</p>
+    </div>
+
+    <!-- Slide -->
+    <div class="testimonial-card">
+      <img src="img/client3.jpg" alt="Client 3" class="client-pic" />
+      <h3 class="client-name">Emma Wilson</h3>
+      <p class="client-role">London, UK</p>
+      <div class="stars">★★★★☆</div>
+      <p class="client-quote">"Beautiful design and very elegant. A little pricey, but totally worth it!"</p>
+    </div>
+      </div>
+</section>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo & About -->
+    <div class="footer-about">
+      <h2 class="footer-logo">MyStore</h2>
+      <p>Exclusive collections of jewelry, flowers, and more. 
+      Bringing beauty & elegance to your lifestyle.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 MyStore. All Rights Reserved.</p>
+  </div>
+</footer>
+
+ 
+</body>
+</html>
+ <script src="home.js"></script>
